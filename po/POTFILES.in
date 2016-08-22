@@ -1,0 +1,16 @@
+# List of source files containing translatable strings.
+
+[type: gettext/glade]src/event_edit.ui
+[type: gettext/glade]src/reminderer.ui
+[type: gettext/glade]src/window_about.ui
+[type: gettext/glade]src/window_help.ui
+[type: gettext/glade]src/window_prefs.ui
+src/event_edit.c
+src/eventlists.c
+src/eventstore.c
+src/reminderer.c
+src/window_about.c
+src/preferences.c
+src/window_prefs.c
+data/reminderer-autostart.desktop.in
+data/reminderer.desktop.in

@@ -1,0 +1,512 @@
+# Polish translation.
+# Copyright (C) 2009 Rafal Dabrowa
+# This file is distributed under the same license as the reminderer package.
+# Rafal Dabrowa <fatwildcat@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-06-27 11:05+0200\n"
+"PO-Revision-Date: 2009-11-26 00:31+CET\n"
+"Last-Translator: Rafal Dabrowa <fatwildcat@gmail.com>\n"
+"Language-Team: pl <LL@li.org>\n"
+"Language: Polish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/event_edit.ui.h:1
+msgid "Jan"
+msgstr "sty"
+
+#: ../src/event_edit.ui.h:2
+msgid "Feb"
+msgstr "lut"
+
+#: ../src/event_edit.ui.h:3
+msgid "Mar"
+msgstr "mar"
+
+#: ../src/event_edit.ui.h:4
+msgid "Apr"
+msgstr "kwi"
+
+#: ../src/event_edit.ui.h:5
+msgid "May"
+msgstr "maj"
+
+#: ../src/event_edit.ui.h:6
+msgid "Jun"
+msgstr "cze"
+
+#: ../src/event_edit.ui.h:7
+msgid "Jul"
+msgstr "lip"
+
+#: ../src/event_edit.ui.h:8
+msgid "Aug"
+msgstr "sie"
+
+#: ../src/event_edit.ui.h:9
+msgid "Sep"
+msgstr "wrz"
+
+#: ../src/event_edit.ui.h:10
+msgid "Oct"
+msgstr "paź"
+
+#: ../src/event_edit.ui.h:11
+msgid "Nov"
+msgstr "lis"
+
+#: ../src/event_edit.ui.h:12
+msgid "Dec"
+msgstr "gru"
+
+#: ../src/event_edit.ui.h:13 ../src/eventlists.c:275
+msgid "Mon"
+msgstr "pon"
+
+#: ../src/event_edit.ui.h:14 ../src/eventlists.c:276
+msgid "Tue"
+msgstr "wto"
+
+#: ../src/event_edit.ui.h:15 ../src/eventlists.c:277
+msgid "Wed"
+msgstr "śro"
+
+#: ../src/event_edit.ui.h:16 ../src/eventlists.c:278
+msgid "Thu"
+msgstr "czw"
+
+#: ../src/event_edit.ui.h:17 ../src/eventlists.c:279
+msgid "Fri"
+msgstr "pią"
+
+#: ../src/event_edit.ui.h:18 ../src/eventlists.c:280
+msgid "Sat"
+msgstr "sob"
+
+#: ../src/event_edit.ui.h:19 ../src/eventlists.c:281
+msgid "Sun"
+msgstr "nie"
+
+#: ../src/event_edit.ui.h:20
+msgid "Event - Reminderer"
+msgstr "Wydarzenie - Przypominacz"
+
+#: ../src/event_edit.ui.h:21
+msgid "by date:"
+msgstr "według daty:"
+
+#: ../src/event_edit.ui.h:22
+msgid "Press Shift or Ctrl key to select multiple items"
+msgstr "Wciśnij Shift lub Ctrl by zaznaczyć wiele pozycji"
+
+#: ../src/event_edit.ui.h:23
+msgid "Every year"
+msgstr "Każdy rok"
+
+#: ../src/event_edit.ui.h:24
+msgid "periodic, every days:"
+msgstr "okresowe, co (dni):"
+
+#: ../src/event_edit.ui.h:25
+msgid " days to nearest:"
+msgstr " dni do najbliższego:"
+
+#: ../src/event_edit.ui.h:26
+msgid "appear days before: "
+msgstr "wyświetlić dni przed zdarzeniem: "
+
+#: ../src/event_edit.ui.h:27
+msgid "keep reminder until explicitly deleted"
+msgstr "przypomnienie trzymać aż do jawnego skasowania"
+
+#: ../src/event_edit.ui.h:28
+msgid ""
+"whether remove remind after event date\n"
+"or keep on list until deleted manually"
+msgstr ""
+"skasować przypomnienie gdy minie dzień wydarzenia\n"
+"czy trzymać na liście aż zostanie ręcznie skasowane"
+
+#: ../src/event_edit.ui.h:30 ../src/reminderer.c:455 ../src/reminderer.c:477
+#: ../src/reminderer.c:499
+msgid "Event"
+msgstr "Wydarzenie"
+
+#: ../src/event_edit.ui.h:31
+msgid "todo"
+msgstr "do zrobienia"
+
+#: ../src/event_edit.ui.h:32
+msgid "display also on reminder list"
+msgstr "wyświetlać też na liście przypomnień"
+
+#: ../src/event_edit.ui.h:33
+msgid "text:"
+msgstr "tekst:"
+
+#: ../src/reminderer.ui.h:1 ../data/reminderer-autostart.desktop.in.h:1
+#: ../data/reminderer.desktop.in.h:1
+msgid "Reminderer"
+msgstr "Przypominacz"
+
+#: ../src/reminderer.ui.h:2
+msgid "_File"
+msgstr "_Plik"
+
+#: ../src/reminderer.ui.h:3
+msgid "_Quit"
+msgstr "_Zakończ"
+
+#: ../src/reminderer.ui.h:4
+msgid "_Edit"
+msgstr "_Edycja"
+
+#: ../src/reminderer.ui.h:5
+msgid "_New"
+msgstr "_Nowy"
+
+#: ../src/reminderer.ui.h:6
+msgid "_Delete"
+msgstr "_Usuń"
+
+#: ../src/reminderer.ui.h:7
+msgid "_Undelete"
+msgstr "_Odkasuj"
+
+#: ../src/reminderer.ui.h:8
+msgid "_Preferences"
+msgstr "_Preferencje"
+
+#: ../src/reminderer.ui.h:9
+msgid "_View"
+msgstr "_Widok"
+
+#: ../src/reminderer.ui.h:10
+msgid "_Reminders"
+msgstr "_Przypomnienia"
+
+#: ../src/reminderer.ui.h:11
+msgid "_Events"
+msgstr "_Wydarzenia"
+
+#: ../src/reminderer.ui.h:12
+msgid "_Todos"
+msgstr "_Do zrobienia"
+
+#: ../src/reminderer.ui.h:13
+msgid "_Preview of future reminders"
+msgstr "P_odgląd przyszłych przypomnień"
+
+#: ../src/reminderer.ui.h:14
+msgid "_Show deleted"
+msgstr "Po_każ usunięte"
+
+#: ../src/reminderer.ui.h:15
+msgid "_Help"
+msgstr "P_omoc"
+
+#: ../src/reminderer.ui.h:16
+msgid "_About"
+msgstr "_O Programie"
+
+#: ../src/reminderer.ui.h:17
+msgid "Reminders"
+msgstr "Przypomnienia"
+
+#: ../src/reminderer.ui.h:18
+msgid "Events"
+msgstr "Wydarzenia"
+
+#: ../src/reminderer.ui.h:19
+msgid "Todos"
+msgstr "Do zrobienia"
+
+#: ../src/reminderer.ui.h:20
+msgid "Preview of future reminders"
+msgstr "Podgląd przyszłych przypomnień"
+
+#: ../src/window_about.ui.h:1
+msgid "Copyright (C) Rafal Dabrowa"
+msgstr "Prawa autorskie: Rafał Dąbrowa"
+
+#: ../src/window_about.ui.h:2
+msgid "Display reminders of upcoming events and things to do"
+msgstr ""
+"Wyświetla przypomnienia o nadchodzących wydarzeniach, rzeczy do zrobienia"
+
+#: ../src/window_help.ui.h:1
+msgid ""
+"Reminderer contains three lists: reminders, events and a \"todo\" list. When "
+"program starts, the reminder list is displayed. This list is generated from "
+"the two remaining lists. It is possible to switch the currently displayed "
+"list from \"View\" menu.\n"
+"\n"
+"A reminder starts to appear on reminder list a few days before the event "
+"date. Together with the event date a number of days to the event is "
+"displayed. Number of days before event, which the reminder should start to "
+"appear, may be specified when the event is entered.\n"
+"\n"
+"When the reminder list for a particular day is non empty, the reminderer "
+"program appears at desktop startup with the list of reminders for the day.\n"
+"\n"
+"In addition to the two lists there is a \"todo\" list. Items on the list "
+"don't have date specified. It is possible to specify whether a \"todo\" item "
+"has to appear also on reminder list or not.\n"
+"\n"
+"A new item on reminder list may be added only through add of a new item on "
+"the event list or on the \"todo\" list. Editing of an item on reminders list "
+"is, in fact, editing of the item on one of the remaining lists. \n"
+"\n"
+"Items deleted on event list and on \"todo\" list are kept till program "
+"close. While the program is not closed, they may be restored. To do this, "
+"\"show deleted\" option in \"View\" menu should be checked first. Deleted "
+"items appear on list stroken through. Particlular items may be undeleted "
+"using \"Undelete\" option, either from \"Edit\" menu, or using popup menu. \n"
+"\n"
+"When a \"todo\" item is deleted on reminder list, the item is deleted also "
+"on \"todo\" list. On the other hand, when a reminder on the reminder list is "
+"deleted, it is no longer displayed for the specified date. It is possible to "
+"undo the reminder deletion if we are before the event date. This is made in "
+"the same way as events and \"todo\" items are restored.\n"
+"\n"
+"Have fun!\n"
+"\n"
+"\n"
+"Bug reports, questions, suggestions may be sent to address: fatwildcat@gmail."
+"com\n"
+"License: GNU GPL\n"
+"Copyright (C) by Rafal Dabrowa"
+msgstr ""
+"Przypominacz zawiera trzy listy: listę przypomnień, wydarzeń, oraz listę "
+"\"do zrobienia\". Program na początku otwiera listę przypomnień. Lista ta "
+"jest generowana na podstawie dwóch pozostałych list. Przełączenia aktualnie "
+"wyświetlanej listy można dokonać w menu \"Widok\".\n"
+"\n"
+"Na kilka dni przed określonym wydarzeniem pojawia się przypomnienie o nim na "
+"liście przypomnień. Razem z datą wydarzenia pojawia się też liczba dni "
+"dzielących od niego. To, na ile dni przed wydarzeniem ma pojawić się "
+"przypomnienie, można określić przy zakładaniu wydarzenia.\n"
+"\n"
+"Jeśli lista przypomnień na dany dzień jest niepusta, przypominacz pojawia "
+"się tuż po uruchomieniu środowiska wyświetlając przypomnienia na dany "
+"dzień.\n"
+"\n"
+"Dodatkowo istnieje lista rzeczy \"do zrobienia\". Na tej liście elementy nie "
+"mają określonej daty. Można natomiast określić czy przypominacz ma pokazywać "
+"daną rzecz do zrobienia na liście przypomnień, czy nie.\n"
+"\n"
+"Nową pozycję na liście przypomnień można dodać jedynie poprzez dodanie "
+"odpowiedniej pozycji na liście wydarzeń albo na liście \"do zrobienia\". "
+"Edycja pozycji na liście przypomnień jest tak naprawdę edycją odpowiadającej "
+"mu pozycji na jednej z pozostałych list.\n"
+"\n"
+"Pozycje skasowane z listy wydarzeń i z listy \"do zrobienia\" są pamiętane "
+"do chwili zakończenia działania programu. Dopóki program nie zostanie "
+"zamkniety można je przywrócić. W  tym celu należy najpierw zaznaczyć opcję "
+"\"pokaż usunięte\" w menu \"Widok\". Usunięte pozycje pojawiają się jako "
+"przekreślone. Należy zaznaczyć odpowiednią pozycję i skorzystać z opcji "
+"\"Odkasuj\".\n"
+"\n"
+"Usunięcie elementu \"do zrobienia\" z listy przypomnień usuwa także ten "
+"element z listy \"do zrobienia\". Natomiast usunięcie przypomnienia z listy "
+"przypomnień powoduje że przypomnienie dla danej daty nie będzie więcej się "
+"pojawiać. Jednakże, jeśli data wydarzenia jeszcze nie minęła, można "
+"przywrócić pojawianie się takiego przypomnienia. Robi się to w sposób "
+"podobny do odkasowywania wydarzeń i pozycji \"do zrobienia\".\n"
+"\n"
+"Miłego użytkowania.\n"
+"\n"
+"\n"
+"Informacje o błędach, sugestie zmian, zapytania proszę nadsyłać na adres: "
+"fatwildcat@gmail.com\n"
+"Licencja: GNU GPL\n"
+"Prawa autorskie: Rafał Dąbrowa"
+
+#: ../src/window_help.ui.h:21
+msgid "Help - Reminderer"
+msgstr "Pomoc - Przypominacz"
+
+#: ../src/window_help.ui.h:22
+msgid ""
+"<span size=\"large\" style=\"italic\" weight=\"normal\">Reminderer Help</"
+"span>"
+msgstr ""
+"<span size=\"large\" style=\"italic\" weight=\"normal\">Pomoc Przypominacza</"
+"span>"
+
+#: ../src/window_prefs.ui.h:1
+msgid "Reminderer - preferences"
+msgstr "Przypominacz - preferencje"
+
+#: ../src/window_prefs.ui.h:2
+msgid "Event file name"
+msgstr "Nazwa pliku z wydarzeniami"
+
+#: ../src/window_prefs.ui.h:3
+msgid "use bold font on a colored background"
+msgstr "używaj pogrubionej czcionki na kolorowym tle"
+
+#: ../src/window_prefs.ui.h:4
+msgid "colored background lighten:"
+msgstr "rozjaśnienie kolorowego tła:"
+
+#: ../src/window_prefs.ui.h:5
+msgid "List layout"
+msgstr "Format listy"
+
+#: ../src/eventlists.c:119
+msgid "S"
+msgstr "P"
+
+#: ../src/eventlists.c:121
+msgid "A"
+msgstr "R"
+
+#: ../src/eventlists.c:123
+msgid "M"
+msgstr "M"
+
+#: ../src/eventlists.c:125
+msgid "W"
+msgstr "T"
+
+#. Weekly
+#: ../src/eventlists.c:126
+msgid "D"
+msgstr "D"
+
+#: ../src/eventlists.c:128
+msgid "P"
+msgstr "O"
+
+#: ../src/eventlists.c:266
+#, c-format
+msgid "Off"
+msgstr "Wyłączony"
+
+#: ../src/eventstore.c:94
+#, c-format
+msgid ""
+"Unable to create file %s\n"
+"%s"
+msgstr ""
+"Nie mogę utworzyć pliku %s\n"
+"%s"
+
+#: ../src/eventstore.c:104 ../src/eventstore.c:108
+#, c-format
+msgid "Unable to write to %s"
+msgstr "Nie mogę pisać do %s"
+
+#: ../src/eventstore.c:117
+#, c-format
+msgid ""
+"Unable to rename %s to %s\n"
+"%s"
+msgstr ""
+"Nie mogę zmienić nazwy %s na %s\n"
+"%s"
+
+#: ../src/eventstore.c:125
+#, c-format
+msgid "Unable to rename %s to %s"
+msgstr "Nie mogę zmienić nazwy %s na %s"
+
+#: ../src/eventstore.c:243
+#, c-format
+msgid "Expected <reminders> root element, is <%s>"
+msgstr "Spodziewany <reminders> jako główny element, a jest <%s>"
+
+#: ../src/eventstore.c:324 ../src/eventstore.c:360
+#, c-format
+msgid ""
+"\n"
+"unrecognized element \"%s\" at line %d"
+msgstr ""
+"\n"
+"nierozpoznany element \"%s\" w wierszu %d"
+
+#: ../src/eventstore.c:410
+msgid "Errors encountered in events file\n"
+msgstr "Błędy napotkane w pliku z wydarzeniami\n"
+
+#: ../src/eventstore.c:414
+#, c-format
+msgid ""
+"Unable to parse events file\n"
+"%s\n"
+"%s"
+msgstr ""
+"Nie mogę sparsować pliku z wydarzeniami\n"
+"%s\n"
+"%s"
+
+#: ../src/reminderer.c:447
+msgid "T"
+msgstr "T"
+
+#: ../src/reminderer.c:451 ../src/reminderer.c:473 ../src/reminderer.c:495
+msgid "Date"
+msgstr "Data"
+
+#: ../src/reminderer.c:469 ../src/reminderer.c:491
+msgid "Ds"
+msgstr "Dni"
+
+#: ../src/reminderer.c:513
+msgid "R"
+msgstr "P"
+
+#: ../src/reminderer.c:517
+msgid "Todo"
+msgstr "Do zrobienia"
+
+#: ../src/reminderer.c:540
+msgid "reminderer installation problem: unable to open config file"
+msgstr ""
+"problem instalacji przypominacza: nie mogę otworzyć pliku konfiguracyjnego"
+
+#: ../src/reminderer.c:622
+msgid "Don't start when reminder list is empty"
+msgstr "Nie startuj gdy pusta lista przypomnień"
+
+#: ../src/reminderer.c:624
+msgid "Time to use instead of current (X=23:59:55)"
+msgstr "Użyj zamiast bieżącego czasu (X=23:59:55)"
+
+#: ../src/reminderer.c:686
+#, c-format
+msgid "reminderer application is already running\n"
+msgstr "przypominacz jest już uruchomiony\n"
+
+#: ../src/preferences.c:14
+#, c-format
+msgid "Unable to create directory %s"
+msgstr "Nie mogę utworzyć katalogu %s"
+
+#: ../src/window_prefs.c:30
+msgid "Reminderer - events file"
+msgstr "Przypominacz - plik z wydarzeniami"
+
+#: ../src/window_prefs.c:32
+msgid "OK"
+msgstr "OK"
+
+#: ../src/window_prefs.c:33
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: ../data/reminderer-autostart.desktop.in.h:2
+#: ../data/reminderer.desktop.in.h:2
+msgid "Birthday Reminder"
+msgstr "Przypomnienia o urodzinach"
+
+#: ../data/reminderer-autostart.desktop.in.h:3
+#: ../data/reminderer.desktop.in.h:3
+msgid "Reminds about upcoming events and things to do"
+msgstr "Przypomina o nadchodzących wydarzeniach i o rzeczach do zrobienia"

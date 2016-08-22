@@ -1,0 +1,9 @@
+[Desktop Entry]
+_Name=Reminderer
+_GenericName=Birthday Reminder
+_Comment=Reminds about upcoming events and things to do
+Exec=reminderer
+Icon=reminderer
+Terminal=false
+Type=Application
+Categories=Calendar;GTK;Utility;

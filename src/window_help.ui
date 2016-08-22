@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.18.3 -->
+<interface>
+  <requires lib="gtk+" version="3.0"/>
+  <object class="GtkTextBuffer" id="textbuffer1">
+    <property name="text" translatable="yes">Reminderer contains three lists: reminders, events and a "todo" list. When program starts, the reminder list is displayed. This list is generated from the two remaining lists. It is possible to switch the currently displayed list from "View" menu.
+
+A reminder starts to appear on reminder list a few days before the event date. Together with the event date a number of days to the event is displayed. Number of days before event, which the reminder should start to appear, may be specified when the event is entered.
+
+When the reminder list for a particular day is non empty, the reminderer program appears at desktop startup with the list of reminders for the day.
+
+In addition to the two lists there is a "todo" list. Items on the list don't have date specified. It is possible to specify whether a "todo" item has to appear also on reminder list or not.
+
+A new item on reminder list may be added only through add of a new item on the event list or on the "todo" list. Editing of an item on reminders list is, in fact, editing of the item on one of the remaining lists. 
+
+Items deleted on event list and on "todo" list are kept till program close. While the program is not closed, they may be restored. To do this, "show deleted" option in "View" menu should be checked first. Deleted items appear on list stroken through. Particlular items may be undeleted using "Undelete" option, either from "Edit" menu, or using popup menu. 
+
+When a "todo" item is deleted on reminder list, the item is deleted also on "todo" list. On the other hand, when a reminder on the reminder list is deleted, it is no longer displayed for the specified date. It is possible to undo the reminder deletion if we are before the event date. This is made in the same way as events and "todo" items are restored.
+
+Have fun!
+
+
+Bug reports, questions, suggestions may be sent to address: fatwildcat@gmail.com
+License: GNU GPL
+Copyright (C) by Rafal Dabrowa</property>
+  </object>
+  <object class="GtkDialog" id="dialogHelp">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Help - Reminderer</property>
+    <property name="default_width">500</property>
+    <property name="default_height">400</property>
+    <property name="type_hint">dialog</property>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="dialog-vbox7">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox" id="dialog-action_area7">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
+            <child>
+              <object class="GtkButton" id="buttonClose">
+                <property name="label">Close</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="pack_type">end</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="hbox1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkLabel" id="label2">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">&lt;span size="large" style="italic" weight="normal"&gt;Reminderer Help&lt;/span&gt;</property>
+                <property name="use_markup">True</property>
+                <property name="wrap">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="image1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixel_size">32</property>
+                <property name="icon_name">reminderer</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="pack_type">end</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrolledwindow1">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <child>
+              <object class="GtkTextView" id="textview1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixels_above_lines">2</property>
+                <property name="editable">False</property>
+                <property name="wrap_mode">word</property>
+                <property name="justification">fill</property>
+                <property name="cursor_visible">False</property>
+                <property name="buffer">textbuffer1</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="0">buttonClose</action-widget>
+    </action-widgets>
+  </object>
+</interface>

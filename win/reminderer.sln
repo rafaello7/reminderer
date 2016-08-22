@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "reminderer", "reminderer.vcxproj", "{A263350A-4CAE-4DCA-9D73-8CB5629D5BB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A263350A-4CAE-4DCA-9D73-8CB5629D5BB6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A263350A-4CAE-4DCA-9D73-8CB5629D5BB6}.Debug|Win32.Build.0 = Debug|Win32
+		{A263350A-4CAE-4DCA-9D73-8CB5629D5BB6}.Release|Win32.ActiveCfg = Release|Win32
+		{A263350A-4CAE-4DCA-9D73-8CB5629D5BB6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

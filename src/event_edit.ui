@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.18.3 -->
+<interface>
+  <requires lib="gtk+" version="3.0"/>
+  <object class="GtkAdjustment" id="adjustAppearDaysBefore">
+    <property name="upper">999</property>
+    <property name="value">7</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustEvPeriodicDays">
+    <property name="lower">2</property>
+    <property name="upper">999</property>
+    <property name="value">2</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustEvPeriodicNear">
+    <property name="upper">1</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkListStore" id="storeEvByDateDay">
+    <columns>
+      <!-- column-name day -->
+      <column type="gint"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">1</col>
+      </row>
+      <row>
+        <col id="0">2</col>
+      </row>
+      <row>
+        <col id="0">3</col>
+      </row>
+      <row>
+        <col id="0">4</col>
+      </row>
+      <row>
+        <col id="0">5</col>
+      </row>
+      <row>
+        <col id="0">6</col>
+      </row>
+      <row>
+        <col id="0">7</col>
+      </row>
+      <row>
+        <col id="0">8</col>
+      </row>
+      <row>
+        <col id="0">9</col>
+      </row>
+      <row>
+        <col id="0">10</col>
+      </row>
+      <row>
+        <col id="0">11</col>
+      </row>
+      <row>
+        <col id="0">12</col>
+      </row>
+      <row>
+        <col id="0">13</col>
+      </row>
+      <row>
+        <col id="0">14</col>
+      </row>
+      <row>
+        <col id="0">15</col>
+      </row>
+      <row>
+        <col id="0">16</col>
+      </row>
+      <row>
+        <col id="0">17</col>
+      </row>
+      <row>
+        <col id="0">18</col>
+      </row>
+      <row>
+        <col id="0">19</col>
+      </row>
+      <row>
+        <col id="0">20</col>
+      </row>
+      <row>
+        <col id="0">21</col>
+      </row>
+      <row>
+        <col id="0">22</col>
+      </row>
+      <row>
+        <col id="0">23</col>
+      </row>
+      <row>
+        <col id="0">24</col>
+      </row>
+      <row>
+        <col id="0">25</col>
+      </row>
+      <row>
+        <col id="0">26</col>
+      </row>
+      <row>
+        <col id="0">27</col>
+      </row>
+      <row>
+        <col id="0">28</col>
+      </row>
+      <row>
+        <col id="0">29</col>
+      </row>
+      <row>
+        <col id="0">30</col>
+      </row>
+      <row>
+        <col id="0">31</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="storeEvByDateMonth">
+    <columns>
+      <!-- column-name month_name -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Jan</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Feb</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Mar</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Apr</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">May</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Jun</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Jul</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Aug</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Sep</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Oct</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Nov</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Dec</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="storeEvByDateWeekday">
+    <columns>
+      <!-- column-name weekday_name -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Mon</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Tue</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Wed</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Thu</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Fri</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Sat</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Sun</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkDialog" id="eventEditDialog">
+    <property name="can_focus">False</property>
+    <property name="border_width">5</property>
+    <property name="title" translatable="yes">Event - Reminderer</property>
+    <property name="window_position">center</property>
+    <property name="type_hint">dialog</property>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="dialog-vbox1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox" id="dialog-action_area1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
+            <child>
+              <object class="GtkButton" id="buttonOK">
+                <property name="label">OK</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="can_default">True</property>
+                <property name="has_default">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="buttonCancel">
+                <property name="label">Cancel</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="frameEvent">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">in</property>
+            <child>
+              <object class="GtkBox" id="boxEvent">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkGrid" id="gridEvByDate">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">4</property>
+                    <property name="column_spacing">4</property>
+                    <child>
+                      <object class="GtkRadioButton" id="radioEvByDate">
+                        <property name="label" translatable="yes">by date:</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="valign">start</property>
+                        <property name="active">True</property>
+                        <property name="draw_indicator">True</property>
+                        <signal name="toggled" handler="on_radioByDate_toggled" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">0</property>
+                        <property name="height">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkIconView" id="listEvByDateDay">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="tooltip_text" translatable="yes">Press Shift or Ctrl key to select multiple items</property>
+                        <property name="valign">start</property>
+                        <property name="margin">0</property>
+                        <property name="selection_mode">multiple</property>
+                        <property name="item_orientation">horizontal</property>
+                        <property name="model">storeEvByDateDay</property>
+                        <property name="columns">7</property>
+                        <property name="row_spacing">0</property>
+                        <property name="column_spacing">0</property>
+                        <property name="item_padding">0</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="cellrendererEvByDateDay">
+                            <property name="xalign">0.50999999046325684</property>
+                          </object>
+                          <attributes>
+                            <attribute name="text">0</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="left_attach">1</property>
+                        <property name="top_attach">0</property>
+                        <property name="height">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkIconView" id="listEvByDateMonth">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="valign">start</property>
+                        <property name="margin">0</property>
+                        <property name="selection_mode">multiple</property>
+                        <property name="item_orientation">horizontal</property>
+                        <property name="model">storeEvByDateMonth</property>
+                        <property name="columns">3</property>
+                        <property name="row_spacing">0</property>
+                        <property name="column_spacing">0</property>
+                        <property name="item_padding">0</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="cellrendererEvByDateMonth"/>
+                          <attributes>
+                            <attribute name="text">0</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="left_attach">2</property>
+                        <property name="top_attach">0</property>
+                        <property name="height">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkComboBoxText" id="comboEvByDateYear">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="valign">start</property>
+                        <property name="active">0</property>
+                        <items>
+                          <item id="0" translatable="yes">Every year</item>
+                        </items>
+                      </object>
+                      <packing>
+                        <property name="left_attach">3</property>
+                        <property name="top_attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkIconView" id="listEvByDateWeekday">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="halign">end</property>
+                        <property name="valign">end</property>
+                        <property name="margin">0</property>
+                        <property name="selection_mode">multiple</property>
+                        <property name="model">storeEvByDateWeekday</property>
+                        <property name="columns">3</property>
+                        <property name="row_spacing">0</property>
+                        <property name="column_spacing">0</property>
+                        <property name="item_padding">0</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="cellrendererByDateWeekday"/>
+                          <attributes>
+                            <attribute name="text">0</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="left_attach">3</property>
+                        <property name="top_attach">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox" id="boxEvPeriodic">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkRadioButton" id="radioEvPeriodic">
+                        <property name="label" translatable="yes">periodic, every days:</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="draw_indicator">True</property>
+                        <property name="group">radioEvByDate</property>
+                        <signal name="toggled" handler="on_radioPeriodic_toggled" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkSpinButton" id="spinEvPeriodicDays">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="adjustment">adjustEvPeriodicDays</property>
+                        <property name="numeric">True</property>
+                        <property name="value">2</property>
+                        <signal name="value-changed" handler="on_spinEvPeriodicDays_valueChanged" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label3">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes"> days to nearest:</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkSpinButton" id="spinEvPeriodicNear">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="adjustment">adjustEvPeriodicNear</property>
+                        <property name="numeric">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">3</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label4">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox" id="boxAppearDaysBefore">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkLabel" id="label2">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">appear days before: </property>
+                        <property name="xalign">0</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkSpinButton" id="daysBefore">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="adjustment">adjustAppearDaysBefore</property>
+                        <property name="numeric">True</property>
+                        <property name="value">7</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="chkKeep">
+                    <property name="label" translatable="yes">keep reminder until explicitly deleted</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="tooltip_text" translatable="yes">whether remove remind after event date
+or keep on list until deleted manually</property>
+                    <property name="active">True</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">4</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel" id="label5">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Event</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="frameTodo">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <child>
+              <object class="GtkBox" id="boxTodo">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkRadioButton" id="radioTodo">
+                    <property name="label" translatable="yes">todo</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="draw_indicator">True</property>
+                    <property name="group">radioEvByDate</property>
+                    <signal name="toggled" handler="on_radioTodo_toggled" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="chkRemind">
+                    <property name="label" translatable="yes">display also on reminder list</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="active">True</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="boxText">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkLabel" id="label1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">text:</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="text">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="invisible_char">●</property>
+                <property name="activates_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="0">buttonOK</action-widget>
+      <action-widget response="1">buttonCancel</action-widget>
+    </action-widgets>
+  </object>
+</interface>

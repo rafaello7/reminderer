@@ -1,0 +1,83 @@
+[Version] 
+Signature=$CHICAGO$ 
+
+[DefaultInstall]
+CopyFiles=Executables,GtkBuilder,Icons,GlibSchemas
+UpdateInis=AddLinks
+AddReg=RegisterApp
+
+[DestinationDirs]
+Executables=24,Program Files\%DESTDIR%
+GtkBuilder=24,Program Files\%DESTDIR%\gtkbuilder
+Icons=24,Program Files\%DESTDIR%\icons
+GlibSchemas=24,Program Files\%DESTDIR%\share\glib-2.0\schemas
+
+[Executables]
+reminderer.exe
+libatk-1.0-0.dll
+libcairo-2.dll
+libcairo-gobject-2.dll
+libffi-6.dll
+libfontconfig-1.dll
+libfreetype-6.dll
+libgdk-3-0.dll
+libgdk_pixbuf-2.0-0.dll
+libgio-2.0-0.dll
+libglib-2.0-0.dll
+libgmodule-2.0-0.dll
+libgobject-2.0-0.dll
+libgtk-3-0.dll
+libiconv-2.dll
+libintl-8.dll
+liblzma-5.dll
+libpango-1.0-0.dll
+libpangocairo-1.0-0.dll
+libpangoft2-1.0-0.dll
+libpangowin32-1.0-0.dll
+libpixman-1-0.dll
+libpng15-15.dll
+libxml2-2.dll
+pthreadGC2.dll
+reminderer.exe
+zlib1.dll
+reminderer.inf
+
+[GtkBuilder]
+event_edit.ui
+reminderer.ui
+window_about.ui
+window_help.ui    
+window_prefs.ui    
+
+[Icons]
+reminderer.png
+
+[GlibSchemas]
+gschemas.compiled
+
+[AddLinks]
+setup.ini, progman.groups,, "Reminderer=Reminderer"
+setup.ini, progman.groups,, "Startup=Startup"
+setup.ini, Reminderer,, """Reminderer"", ""%24%\Progra~1\%DESTDIR%\reminderer.exe"",,,,""%24%\Program Files\%DESTDIR%"""
+setup.ini, Startup,, """Reminderer"", ""%24%\Progra~1\%DESTDIR%\reminderer.exe"" -n,,,,""%24%\Program Files\%DESTDIR%"""
+
+[RemoveLinks]
+setup.ini, progman.groups,, "Reminderer=Reminderer"
+setup.ini, progman.groups,, "Startup=Startup"
+setup.ini, Reminderer,, """Reminderer"""
+setup.ini, Startup,, """Reminderer"""
+
+[RegisterApp]
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Reminderer,"DisplayName",,"Reminderer" 
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Reminderer,"UninstallString",,"RunDll32 setupapi.dll,InstallHinfSection RemoveReminderer 132 %24%\Progra~1\%DESTDIR%\reminderer.inf" 
+
+[UnRegisterApp]
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Reminderer
+
+[RemoveReminderer]
+DelFiles = GtkBuilder,Icons,Executables,GlibSchemas
+DelReg = UnRegisterApp
+UpdateInis = RemoveLinks
+
+[Strings]
+DESTDIR = "Rafaello\reminderer"
