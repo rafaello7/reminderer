@@ -1,0 +1,10 @@
+
+<gresources>
+  <gresource prefix="/org/rafaello7/reminderer">
+      <file preprocess="xml-stripblanks">reminderer.ui</file>
+      <file preprocess="xml-stripblanks">event_edit.ui</file>
+      <file preprocess="xml-stripblanks">window_about.ui</file>
+      <file preprocess="xml-stripblanks">window_help.ui</file>
+      <file preprocess="xml-stripblanks">window_prefs.ui</file>
+  </gresource>
+</gresources>

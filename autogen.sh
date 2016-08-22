@@ -1,3 +1,3 @@
 #!/bin/sh
 autoreconf --install --symlink
-intltoolize
+intltoolize --automake

@@ -529,7 +529,8 @@ static GtkWindow *prepareMainWindow(void)
 	g_free(iconsDir);
 	gtk_window_set_default_icon_name("reminderer");
 	g_xml = gtk_builder_new();
-    if( !gtk_builder_add_from_file(g_xml, GLADE_FILE("reminderer.ui"), NULL) )
+    if( !gtk_builder_add_from_resource(g_xml,
+                "/org/rafaello7/reminderer/reminderer.ui", NULL) )
 	{
         g_object_unref(G_OBJECT(g_xml));
         g_xml = NULL;
@@ -670,7 +671,7 @@ int main (int argc, char *argv[])
 	textdomain (GETTEXT_PACKAGE);
 #endif
     setlocale(LC_ALL, "");
-    app = gtk_application_new("net.sourceforge.reminderer",
+    app = gtk_application_new("org.rafaello7.reminderer",
 		G_APPLICATION_HANDLES_COMMAND_LINE);
     g_signal_connect(G_OBJECT(app), "command-line",
             G_CALLBACK(onAppCmdLine), NULL);
@@ -682,6 +683,7 @@ int main (int argc, char *argv[])
         g_xml = NULL;
         evs_purge_deleted_events();
     }
+    g_object_unref(app);
     return ret;
 }
 

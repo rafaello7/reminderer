@@ -24,7 +24,8 @@ void showWindowHelp(GtkWidget *owner)
 	GObject *window;
 
 	builder = gtk_builder_new();
-    gtk_builder_add_from_file(builder, GLADE_FILE("window_help.ui"), NULL);
+    gtk_builder_add_from_file(builder,
+            "/org/rafaello7/reminderer/window_help.ui", NULL);
 	gtk_builder_connect_signals(builder, NULL);
 	window = gtk_builder_get_object (builder, "dialogHelp");
 	gtk_window_set_transient_for(GTK_WINDOW(window), GTK_WINDOW(owner));

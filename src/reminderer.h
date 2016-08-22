@@ -26,10 +26,6 @@
 #  define N_(String) (String)
 #endif
 
-#ifndef GLADE_FILE
-#define GLADE_FILE(fname) PACKAGE_DATA_DIR"/reminderer/gtkbuilder/"fname
-#endif
-
 void rmdr_showMessage(const char *message, ...);
 
 #endif /* REMINDERER_H */

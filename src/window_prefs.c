@@ -59,7 +59,8 @@ gboolean showWindowPreferences(GtkWidget *owner)
     gboolean res;
 
 	builder = gtk_builder_new();
-    gtk_builder_add_from_file(builder, GLADE_FILE("window_prefs.ui"), NULL);
+    gtk_builder_add_from_file(builder,
+            "/org/rafaello7/reminderer/window_prefs.ui", NULL);
 	gtk_builder_connect_signals(builder, NULL);
     eventFileEntry = gtk_builder_get_object(builder, "eventFileEntry");
     adjLighten = gtk_builder_get_object(builder, "adjLighten");

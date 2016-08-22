@@ -121,7 +121,8 @@ gboolean run_EventEditDialog(GtkWidget *owner, struct reminderer_event *evbuf)
     GdkRGBA insensitive_color;
 
 	g_xml = gtk_builder_new();
-    gtk_builder_add_from_file(g_xml, GLADE_FILE("event_edit.ui"), NULL);
+    gtk_builder_add_from_resource(g_xml,
+            "/org/rafaello7/reminderer/event_edit.ui", NULL);
 	radioEvByDate = gtk_builder_get_object(g_xml, "radioEvByDate");
 	radioEvPeriodic = gtk_builder_get_object(g_xml, "radioEvPeriodic");
 	radioTodo = gtk_builder_get_object(g_xml, "radioTodo");

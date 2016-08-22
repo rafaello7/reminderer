@@ -24,7 +24,8 @@ void showWindowAbout(GtkWidget *owner)
 	GObject *window;
 
 	builder = gtk_builder_new();
-    gtk_builder_add_from_file(builder, GLADE_FILE("window_about.ui"), NULL);
+    gtk_builder_add_from_file(builder,
+            "/org/rafaello7/reminderer/window_about.ui", NULL);
 	gtk_builder_connect_signals(builder, NULL);
 	window = gtk_builder_get_object(builder, "aboutDialog");
 	gtk_about_dialog_set_version(GTK_ABOUT_DIALOG(window), VERSION);
