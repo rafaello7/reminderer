@@ -1,0 +1,88 @@
+reminderer (0.6.1) unstable; urgency=low
+
+  * revert to debian package creation
+
+ -- Rafal <fatwildcat@gmail.com>  Mon, 01 May 2017 21:00:52 +0200
+
+reminderer (0.5) unstable; urgency=medium
+
+  * fix bug with reminders having "keep" option set
+  * add possibility to specify non-current date in command line (for debug)
+
+ -- Rafal <fatwildcat@gmail.com>  Sat, 27 Jun 2015 11:07:32 +0200
+
+reminderer (0.4.5) unstable; urgency=medium
+
+  * add reminds future preview option
+  * fix bug with not-appearing remind created at event day
+
+ -- Rafal <fatwildcat@gmail.com>  Wed, 24 Jun 2015 08:40:36 +0200
+
+reminderer (0.4.4) unstable; urgency=medium
+
+  * allow to select weekdays also when year is specified
+
+ -- Rafal <rafal@wilk>  Fri, 05 Dec 2014 19:04:01 +0100
+
+reminderer (0.4.3) unstable; urgency=low
+
+  * change background colors of reminder days
+  * add tooltip on event edit dialog
+  * fix bug with reading from file of an event with multiple reminders
+
+
+ -- Rafal <fatwildcat@gmail.com>  Thu, 24 Apr 2014 14:32:03 +0200
+
+reminderer (0.4.2) unstable; urgency=low
+
+  * Added colored background lighten option
+
+ -- Rafal <fatwildcat@gmail.com>  Wed, 23 Apr 2014 08:15:17 +0200
+
+reminderer (0.4.1) unstable; urgency=low
+
+  * added options window
+
+ -- Rafal <fatwildcat@gmail.com>  Tue, 22 Apr 2014 10:23:35 +0200
+
+reminderer (0.4) unstable; urgency=low
+
+  * switch to GTK3
+  * extend possibility of specyfying event dates
+  * periodic events
+
+ -- Rafal <fatwildcat@gmail.com>  Sat, 12 Apr 2014 10:11:52 +0000
+
+reminderer (0.3-1) unstable; urgency=low
+
+  * allow at most one instance running
+
+ -- Rafal <rafal@wilk.wilk>  Sun, 06 Dec 2009 09:52:35 +0100
+
+reminderer (0.2.2-1) unstable; urgency=low
+
+  * remove dependency on hicolor-icon-theme
+  * more convenient date setting in event edit dialog
+
+ -- Rafal <rafal@wilk.wilk>  Wed, 02 Dec 2009 20:04:23 +0100
+
+reminderer (0.2.1-1) unstable; urgency=low
+
+  * internationalization, polish translation
+  * make possible to install on Debian Lenny
+  * add -Wl,--as-needed flag to rules
+
+ -- Rafal <rafaello7@users.sourceforge.net>  Sat, 28 Nov 2009 08:54:11 +0100
+
+reminderer (0.2-1) unstable; urgency=low
+
+  * Add undelete option
+  * Add context menus
+
+ -- Rafal Dabrowa <rafaello7@users.sourceforge.net>  Fri, 27 Nov 2009 20:41:12 +0100
+
+reminderer (0.1-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Rafal Dabrowa <rafaello7@users.sourceforge.net>  Sun, 22 Nov 2009 00:11:05 +0100

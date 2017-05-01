@@ -1,5 +1,5 @@
 AC_PREREQ([2.69])
-AC_INIT(reminderer, 0.6, https://github.com/rafaello7/reminderer)
+AC_INIT(reminderer, 0.6.1, https://github.com/rafaello7/reminderer)
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_CONFIG_SRCDIR([src/reminderer.c])
 AC_CONFIG_HEADERS([config.h])
@@ -29,6 +29,7 @@ Makefile
 src/Makefile
 po/Makefile.in
 data/Makefile
+debian/Makefile
 ])
 
 AC_OUTPUT

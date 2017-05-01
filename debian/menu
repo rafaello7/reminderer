@@ -1,0 +1,2 @@
+?package(reminderer):needs="X11" section="Applications/Tools"\
+  title="reminderer" command="reminderer"

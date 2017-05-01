@@ -1,0 +1,14 @@
+Source: reminderer
+Section: x11
+Priority: optional
+Maintainer: Rafal Dabrowa <fatwildcat@gmail.com>
+Build-Depends: debhelper (>= 7), autotools-dev, libgtk-3-dev
+Standards-Version: 3.8.3
+Homepage: http://sourceforge.net/projects/reminderer/
+
+Package: reminderer
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: display reminders of upcoming events and things to do
+ Program displays reminders of upcoming events, a few days in advance.
+ Also allows to enter a list of things to do.
